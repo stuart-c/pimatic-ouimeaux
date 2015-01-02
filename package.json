@@ -1,0 +1,29 @@
+{
+  "name": "pimatic-ouimeaux",
+  "description": "Plugin to integrate ouimeaux to control WiFi devices.",
+  "author": "Stuart Clark <stuart.clark@jahingo.com>",
+  "main": "ouimeaux",
+  "files": [
+    "ouimeaux.coffee",
+    "README.md",
+    "device-config-schema.coffee",
+    "ouimeaux-config-schema.coffee"
+  ],
+  "version": "0.1.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/stuart-c/pimatic-ouimeaux.git"
+  },
+  "configSchema": "ouimeaux-config-schema.coffee",
+  "dependencies": {
+    "socket.io-client": "0.9.*"
+  },
+  "peerDependencies": {
+    "pimatic": "0.8.*"
+  },
+  "engines": {
+    "node": ">0.8.x",
+    "npm": ">1.1.x"
+  }
+}
